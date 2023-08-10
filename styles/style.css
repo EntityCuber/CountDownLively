@@ -1,0 +1,76 @@
+@font-face {
+  font-family: PicaHoleAbs;
+  src: url("/fonts/PicaHoleAbs.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: DSEG7Classic-Bold;
+  src: url("/fonts/DSEG7Classic-Bold.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #0f0f0f;
+  background-image: url("/images/noise.png");
+  display: flex;
+  /* disables interactions */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  font-size: 40px;
+  font-family: "PicaHoleAbs";
+}
+
+.segment, .label {
+  color: #7a7a7a;
+}
+
+.segment {
+  position: relative;
+}
+
+.segment, .dim-segment {
+  font-size: 200px;
+  font-family: "DSEG7Classic-Bold";
+  display: block;
+  padding-bottom: 0.05em;
+
+}
+
+.dim-segment {
+  position: absolute;
+  color: #141414;
+  z-index: -1;
+  inset: 0px;
+}

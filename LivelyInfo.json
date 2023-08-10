@@ -1,0 +1,12 @@
+{
+  "AppVersion": "0.1.0.0",
+  "Title": "Count Down Timer",
+  "Thumbnail": "thumbnail.png",
+  "Preview": "preview.gif",
+  "Desc": "Timer that count downs to an event you set",
+  "Author": "EntityCuber",
+  "License": "MIT",
+  "Contact": "https://github.com/EntityCuber/CountDownLively",
+  "Type": 1,
+  "FileName": "index.html"
+}

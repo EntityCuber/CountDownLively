@@ -1,0 +1,59 @@
+{
+  "event": {
+    "text": "Date",
+    "type": "textbox",
+    "value": "January 1, 2024 11:30:00"
+  },
+  "backgroundColor": {
+    "text": "Background color",
+    "type": "color",
+    "value": "#0f0f0f"
+  },
+  "segmentColor": {
+    "text": "Segment color",
+    "type": "color",
+    "value": "#7a7a7a"
+  },
+  "segmentDigitsSize": {
+    "max": 300,
+    "min": 0,
+    "step": 1,
+    "text": "Segment digits size",
+    "type": "slider",
+    "help": "Controls the segment digits font size",
+    "value": 200
+  },
+  "labelTextSize": {
+    "max": 300,
+    "min": 0,
+    "step": 1,
+    "text": "Label text size",
+    "type": "slider",
+    "help": "Controls the segment text font size",
+    "value": 40
+  },
+  "noiseTexture": {
+    "text": "Noise texture",
+    "type": "checkbox",
+    "value": true
+  },
+  "dimSegmentColor": {
+    "text": "Dim segment color",
+    "type": "color",
+    "value": "#141414"
+  },
+  "showDimSegment": {
+    "text": "Show dim segment",
+    "type": "checkbox",
+    "value": true
+  },
+  "gap": {
+    "max": 200,
+    "min": 0,
+    "step": 1,
+    "text": "Gap",
+    "type": "slider",
+    "help": "Controls the gap",
+    "value": 15
+  }
+}

@@ -55,5 +55,12 @@
     "type": "slider",
     "help": "Controls the gap",
     "value": 15
+  },
+  "backgroundImage": {
+    "type": "folderDropDown",
+    "value": "Off.png",
+    "text": "Background Image",
+    "filter": "*.jpg|*.jpeg|*.png|*.webp|*.gif",
+    "folder": "background"
   }
 }

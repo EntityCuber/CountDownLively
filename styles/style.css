@@ -23,7 +23,6 @@ body {
 body {
   align-items: center;
   background-color: #0f0f0f;
-  background-image: url("/images/noise.png");
   display: flex;
   /* disables interactions */
   -webkit-touch-callout: none;
@@ -32,6 +31,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  /* background image alignment */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 li {
@@ -41,6 +44,17 @@ li {
   padding: 0px 15px;
 }
 
+.noise {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/noise.png");
+}
 
 .container {
   margin: 0 auto;

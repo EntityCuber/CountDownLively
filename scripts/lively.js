@@ -3,7 +3,7 @@ function livelyPropertyListener(name, val) {
     eventdate_input = val;
     startCountdown(); // Update the countdown with the new event date
   } else if (name == "backgroundColor") {
-    $("body").css("background", val);
+    $("body").css("backgroundColor", val);
   } else if (name == "segmentColor") {
     $(".segment, .label").css("color", val);
   } else if (name == "segmentDigitsSize") {
@@ -12,9 +12,9 @@ function livelyPropertyListener(name, val) {
     $(".label").css("fontSize", val + "px");
   } else if (name == "noiseTexture") {
     if (val) {
-      $("body").css("backgroundImage", "url('/images/noise.png')");
+      $(".noise").css("backgroundImage", "url('/images/noise.png')");
     } else {
-      $("body").css("backgroundImage", "none");
+      $(".noise").css("backgroundImage", "none");
     }
   } else if (name == "dimSegmentColor") {
     $(".dim-segment").css("color", val);
@@ -22,5 +22,9 @@ function livelyPropertyListener(name, val) {
     $(".dim-segment").toggle(val);
   } else if (name == "gap") {
     $("li").css("padding", "0px " + val + "px");
+  } else if (name == "backgroundImage") {
+    var encodedVal = encodeURIComponent(val);
+    var backgroundImageUrl = "url('/" + encodedVal + "')";
+    $("body").css("backgroundImage", backgroundImageUrl);
   }
 }

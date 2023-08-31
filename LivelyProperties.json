@@ -48,7 +48,7 @@
     "step": 0.01,
     "text": "Dim segment opactiy",
     "type": "slider",
-    "help": "Controls the gap",
+    "help": "Controls the dim segment opacity",
     "value": 1
   },
   "gap": {

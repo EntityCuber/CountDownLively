@@ -42,10 +42,14 @@
     "type": "color",
     "value": "#141414"
   },
-  "showDimSegment": {
-    "text": "Show dim segment",
-    "type": "checkbox",
-    "value": true
+  "dimSegmentOpacity": {
+    "max": 1,
+    "min": 0,
+    "step": 0.01,
+    "text": "Dim segment opactiy",
+    "type": "slider",
+    "help": "Controls the gap",
+    "value": 1
   },
   "gap": {
     "max": 200,
@@ -62,5 +66,14 @@
     "text": "Background Image",
     "filter": "*.jpg|*.jpeg|*.png|*.webp|*.gif",
     "folder": "background"
+  },
+  "backgroundBlur": {
+    "max": 300,
+    "min": 0,
+    "step": 1,
+    "text": "Background Blur",
+    "type": "slider",
+    "help": "Controls the background value",
+    "value": 0
   }
 }

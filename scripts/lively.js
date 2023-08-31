@@ -18,13 +18,15 @@ function livelyPropertyListener(name, val) {
     }
   } else if (name == "dimSegmentColor") {
     $(".dim-segment").css("color", val);
-  } else if (name == "showDimSegment") {
-    $(".dim-segment").toggle(val);
+  } else if (name == "dimSegmentOpacity") {
+    $(".dim-segment").css("opacity", val);
   } else if (name == "gap") {
     $("li").css("padding", "0px " + val + "px");
   } else if (name == "backgroundImage") {
     var encodedVal = encodeURIComponent(val);
     var backgroundImageUrl = "url('/" + encodedVal + "')";
     $("body").css("backgroundImage", backgroundImageUrl);
+  } else if (name == "backgroundBlur") {
+    $("body").css("backdropFilter", "blur(" + val + "px)");
   }
 }
